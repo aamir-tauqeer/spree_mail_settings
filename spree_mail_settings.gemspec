@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = SpreeMailSettings.version
   s.summary     = 'Mail setting functionality extracted from Spree Commerce'
   s.description = s.summary
-  s.required_ruby_version = '>= 2.5.7'
+  s.required_ruby_version = '>= 2.5.0'
 
   s.author    = 'John Hawthorn'
   s.email     = 'john.hawthorn@gmail.com'
@@ -22,10 +22,10 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  spree_version = '>= 3.7.0', '< 5.0'
+  spree_version = '>= 3.6.4', '< 5.0'
   s.add_runtime_dependency 'spree_backend', spree_version
   s.add_runtime_dependency 'spree_core', spree_version
-  s.add_runtime_dependency 'spree_auth_devise', spree_version
+  s.add_runtime_dependency 'spree_auth_devise', '>= 3.3.0','< 5.0'
 
   s.add_development_dependency 'pry-rails'
   s.add_development_dependency 'rubocop'
